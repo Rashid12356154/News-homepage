@@ -1,0 +1,311 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: inter;
+    src: url(assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+body{
+    font-size: 15px;
+    font-family: inter;
+}
+.navbar{
+    display: flex;  
+    justify-content: space-between;    
+    background-color: white;  
+    padding: 25px 20px;
+    align-items: center;  
+   
+   
+}
+.navbar .logo img{
+    max-height: 50px;
+}
+.navbar .check_btn{
+   display: none;
+   cursor: pointer;
+   padding: 20px;
+   
+  
+}
+.navbar #check{
+    display: none;
+}
+
+.menu{
+    list-style: none;
+    display: flex;
+}
+.menu li{
+    margin: 0px 20px;
+}
+.menu li a{
+    text-decoration: none;
+    color: hsl(236, 13%, 42%);
+    font-size: 18px;
+}
+.menu li a:hover{
+    color: hsl(5, 85%, 63%);
+}
+
+.hero{
+  
+    padding: 20px;
+    display: grid;
+    grid-template-areas: "desktop__image desktop__image aside"
+     "Left__Article Right__Article aside";
+     gap: 1.5rem;
+}
+.hero section{
+    grid-area: desktop__image;
+}
+.hero  section .banner{
+    width: 100%;
+    height: 350px;
+    content: url(assets/images/image-web-3-desktop.jpg);
+    object-fit: cover;
+    object-position: center;
+}
+
+.hero  article:has(h1){
+    grid-area: Left__Article;
+    color: hsl(240, 100%, 5%);
+    font-size: 2rem;
+    width: 300px;
+}
+.hero article:has(p){
+    width: 400px;
+    grid-area: Right__Article;
+    color: hsl(236, 13%, 42%);
+    line-height: 25px;
+    padding: 20px 0px;
+    margin-bottom: 20px;
+}
+.learn{
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: hsl(5, 85%, 63%);
+    margin-top: 20px;
+    text-transform: uppercase;
+    color: hsl(240, 100%, 5%);
+}
+.learn:hover{
+    background-color: hsl(240, 100%, 5%);
+    color: white;
+}
+.hero .right-new{
+    width: 400px;
+    grid-area: aside;
+    background-color: hsl(240, 100%, 5%);
+    margin: 0px auto;
+
+}
+.hero .right-new h1{
+    color: hsl(35, 77%, 62%);
+    padding: 20px;
+    font-size: 2.5rem;
+}
+.hero .right-new .box{
+    margin: 0px auto;
+    width: 80%;
+    padding: 25px 0px;
+    
+}
+.hero .right-new .one{
+    border-bottom: 1px solid hsl(236, 13%, 42%);
+}
+.hero .right-new .box h2{
+    color: hsl(36, 100%, 99%);
+    cursor: pointer;
+    font-size: 18px;
+}
+.hero .right-new .box h2:hover{
+    color: hsl(35, 77%, 62%);
+}
+.hero .right-new .box p{
+    color: hsl(236, 13%, 42%);
+    width: 90%;
+    padding-top: 20px;
+    line-height: 25px;
+}
+
+main{
+    display: flex;
+    gap: 1.5rem;
+    padding: 10px 20px;
+
+}
+main .column-1{
+    display: flex;
+    gap: 10px;
+}
+main .column-1 img{
+    width: 100%;
+    flex: 1;
+    height: 160px;
+}
+main .column-1 > .box h3{
+    color: hsl(5, 85%, 63%);
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+}
+main .column-1 > .box .title{
+    text-decoration: none;
+    color: hsl(240, 100%, 5%);
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+}
+main .column-1 > .box .title:hover{
+    color: hsl(5, 85%, 63%);
+}
+main .column-1 > .box p{
+    color: hsl(236, 13%, 42%);
+    line-height: 25px;
+    margin-top: 20px;
+}
+
+
+
+main .column-2{
+    display: flex;
+    gap: 10px;
+}
+main .column-2 img{
+    width: 100%;
+    flex: 1;
+    height: 160px;
+}
+main .column-2 > .box h3{
+    color: hsl(5, 85%, 63%);
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+}
+main .column-2 > .box .title{
+    text-decoration: none;
+    color: hsl(240, 100%, 5%);
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+}
+main .column-2 > .box .title:hover{
+    color: hsl(5, 85%, 63%);
+}
+main .column-2 > .box p{
+    color: hsl(236, 13%, 42%);
+    line-height: 25px;
+    margin-top: 20px;
+}
+
+
+
+main .column-3{
+    display: flex;
+    gap: 10px;
+}
+main .column-3 img{
+    width: 100%;
+    flex: 1;
+    height: 160px;
+}
+main .column-3 > .box h3{
+    color: hsl(5, 85%, 63%);
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+}
+main .column-3 > .box .title{
+    text-decoration: none;
+    color: hsl(240, 100%, 5%);
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+}
+main .column-3 > .box .title:hover{
+    color: hsl(5, 85%, 63%);
+}
+main .column-3 > .box p{
+    color: hsl(236, 13%, 42%);
+    line-height: 25px;
+    margin-top: 20px;
+}
+footer{
+    padding: 20px 0px;
+}
+@media (max-width:768px){
+    .menu{
+        position:fixed;
+        top: 60px;
+        right: -100%;
+        background-color: white;
+        flex-direction: column;
+        width: 80%;
+        text-align: center;
+        height: 100vh;
+        transition: right .5s ease-in-out;
+    }
+    .menu li{
+        margin: 25px 0px;
+    }
+    .navbar .check_btn{
+        display: block;
+      
+        
+    }
+     .check_btn .icon{
+        width: 25px;
+        height: 4px;
+        display: block;
+        position: relative;
+        background-color: hsl(240, 100%, 5%);
+        transition: background-color .5s ease-in-out;
+  }
+  .check_btn .icon::before{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      content:"";
+      display: block;
+      background-color: hsl(240, 100%, 5%);
+      top: 8px;
+      transition: all .5s ease-in-out;
+  }
+  
+  .check_btn .icon::after{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      content:"";
+      display: block;
+      background-color: hsl(240, 100%, 5%);
+      top: -8px;
+      transition: all .2s ease-in-out;
+  }
+  #check:checked ~ .menu{
+
+    right: 0;
+  }
+  #check:checked ~ .check_btn .icon{
+    background-color: transparent;
+  }
+  #check:checked ~ .check_btn .icon::before{
+    transform: rotate(45deg);
+    top: 0;
+  }
+  #check:checked ~ .check_btn .icon::after{
+    transform: rotate(-45deg);
+    top: 0;
+  }
+  .hero{
+    grid-template-areas:
+    "desktop__image"
+    "Left__Article"
+    "Right__Article"
+    "aside";
+  width: 300px;
+  }
+  .hero article:has(h1){
+    width: 100%;
+  }
+  main {
+    flex-direction: column;
+  }
+}
